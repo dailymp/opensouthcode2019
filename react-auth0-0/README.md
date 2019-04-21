@@ -1,4 +1,5 @@
 # Quick Start
+### This first folder contains only the basic structure and react router configs, a Nav component, a Home page component and a Profile page component
 
 1. Configure your React app in the Auth0 Dashboard:
 
