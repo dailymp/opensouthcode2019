@@ -1,13 +1,14 @@
 # Quick Start
 
-1. Configure your .env to look like this:
+1. First you need to create an api in your Auth0 dashboard to get the audience identifier
+   1.1. Configure your .env to look like this:
 
 ```
 REACT_APP_AUTH0_DOMAIN=frontend-security.eu.auth0.com
 REACT_APP_AUTH0_CLIENT_ID=89NOZEEMoyFS5ToONniZgApbtVPrlkTA
 REACT_APP_AUTH0_CALLBACK_URL=http://localhost:3000/callback
-// This need to be defined on Auth0 dashboard  on Api sections, the audience is the identifier. 
-REACT_APP_AUTH0_AUDIENCE=https://frontend-security.eu.auth0.com/api/v2/ 
+// This need to be defined on Auth0 dashboard  on Api sections, the audience is the identifier.
+REACT_APP_AUTH0_AUDIENCE=https://frontend-security.eu.auth0.com/api/v2/
 REACT_APP_API_URL=http://localhost:3001
 
 ```
@@ -231,13 +232,15 @@ constructor(history) {
       domain: process.env.REACT_APP_AUTH0_DOMAIN,
       clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
       redirectUri: process.env.REACT_APP_AUTH0_CALLBACK_URL,
-      audience: process.env.REACT_APP_AUTH0_AUDIENCE, 
+      audience: process.env.REACT_APP_AUTH0_AUDIENCE,
       responseType: "token id_token",
       scope: "openid profile email"
     });
   }
 ```
+
 8. Rewrite your package.json in the scripts like this:
+
 ```
   "scripts": {
     "start": "run-p start:client start:server",
@@ -247,7 +250,8 @@ constructor(history) {
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001", 
+  "proxy": "http://localhost:3001",
 
-``` 
+```
+
 9. Then run npm i, and npm start
