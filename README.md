@@ -4,12 +4,9 @@
 
 1. You will learn how to:
    a) Create an Auth0 account and configure a React App.
-   b) Create a demo for handle authentication and autorization.
-
-2. You will learn how to:
-   a) Handle OAuth roles, and scopes.
-   b) Private routes components.
-3. You will learn how to:
-   a) Handle tokens
-   b) Silenth auth
-   c) Auth0 customization.
+   b) Handle authentication and autorization.
+   c) Handle OAuth roles, and scopes.
+   d) Private routes components.
+   e) Handle tokens
+   f) Silenth auth
+   g) Auth0 customization.
