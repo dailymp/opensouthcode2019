@@ -9,4 +9,4 @@
    d) Private routes components.\
    e) Handle tokens.\
    f) Silenth auth.\
-   g) Auth0 customization.\
+   g) Auth0 customization.
