@@ -1,6 +1,6 @@
-This demo show you how to handle the scopes:
+This demo show you how to handle the scopes and roles:
 
-1. Add to your server.js the follow code
+1. Add to your server.js the following code
 
 ```
 app.get("/course", checkJwt, checkScope(["read:courses"]), function(req, res) {

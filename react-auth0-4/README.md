@@ -1,5 +1,5 @@
 # Quick Start
-
+### Integration of an API
 1. First you need to create an api in your Auth0 dashboard to get the audience identifier\
    1.1. Configure your .env to look like this:
 
