@@ -24,7 +24,7 @@ export default class Auth {
       } else if (err) {
         this.history.push("/");
         alert(`Error: ${err.error}. Check the console for further details.`);
-        console.log(err);
+        alert(err);
       }
     });
   };
