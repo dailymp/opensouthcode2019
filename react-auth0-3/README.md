@@ -123,6 +123,8 @@ class App extends Component {
 export default App;
 ```
 4. Update the Auth.js file to the following code:
+Adding  this.userProfile = null;
+logout();, getAccessToken(); and getProfile();
 
 ```
 import auth0 from "auth0-js";

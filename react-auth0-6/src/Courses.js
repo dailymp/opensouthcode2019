@@ -23,7 +23,7 @@ class Courses extends Component {
         if (response.ok) return response.json();
         throw new Error("Network response was not ok.");
       })
-      .then(response => console.log(response))
+      .then(response => alert("Admin role response: \n" + JSON.stringify(response)))
       .catch(error => this.setState({ message: error.message }));
   }
 
