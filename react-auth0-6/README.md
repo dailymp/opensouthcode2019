@@ -285,7 +285,7 @@ render() {
 const { auth } = this.state;
 // Show loading message until the token renewal check is completed.
 if (!this.state.tokenRenewalComplete) return "Loading...";
-return (
+return ...etc
 
 ```
 - Also to silent token renewal you can add a function on your Auth.js
